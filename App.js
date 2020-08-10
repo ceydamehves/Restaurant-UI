@@ -21,7 +21,7 @@ const TabNavigator = createMaterialBottomTabNavigator(
         ),
         activeColor: '#FBAE2A',
         inactiveColor: 'white',
-        barStyle: {backgroundColor: '#2F364E'},
+        barStyle: {backgroundColor: '#2F364E',borderTopColor:'black',borderTopWidth:1}
       },
     },
     PreviousScreen: {
@@ -39,7 +39,7 @@ const TabNavigator = createMaterialBottomTabNavigator(
         ),
         activeColor: '#FBAE2A',
         inactiveColor: 'white',
-        barStyle: {backgroundColor: '#2F364E'},
+        barStyle: {backgroundColor: '#2F364E'}
       },
     },
   },
