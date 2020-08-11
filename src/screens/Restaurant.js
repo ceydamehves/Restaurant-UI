@@ -1,10 +1,10 @@
 import React from "react";
 import { View, StyleSheet, Text } from "react-native";
 
-const PreviousOrders = () => {
+const Restaurant = () => {
   return (
     <View style={styles.center}>
-      <Text>This is the PreviousOrders screen</Text>
+      <Text>This is the Restaurant screen</Text>
     </View>
   );
 };
@@ -18,4 +18,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default PreviousOrders;
+export default Restaurant;
