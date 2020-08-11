@@ -1,7 +1,7 @@
 import React from 'react';
-import {StatusBar, View, Text, FlatList, StyleSheet, Alert, Image, TouchableOpacity } from 'react-native';
+import {StatusBar, View, Text, FlatList, Image, TouchableOpacity } from 'react-native';
 import {Header, SearchBar} from 'react-native-elements';
-
+import { styles } from '../styles/styles.js';
 
 class SearchBusinesses extends React.Component{
 
@@ -48,40 +48,20 @@ class SearchBusinesses extends React.Component{
             <FlatList 
               data={this.state.FlatListItems}
               renderItem={({ item }) => (
-                <View style={styles.deneme}>
+                <View style={styles.flat}>
                 <TouchableOpacity
                 onPress={() => this.props.navigation.navigate('Restaurant')}>
                   <Image style={{width:350,
                                  height:110,borderTopLeftRadius:10,borderTopRightRadius:10}}
-                      source={item.src}/>
-                  
-                  <Text style={styles.item}>{item.name}</Text>
+                      source={item.src}/>                  
+                  <Text style={styles.flatText}>{item.name}</Text>
                   </TouchableOpacity>
                 </View> 
               )}/>           
               </View>              
         </View>     
     );
-
   }
 }
 export default SearchBusinesses;
 
-const styles = StyleSheet.create({
-  deneme:{
-    backgroundColor:'#353A50',
-    borderRadius:10,
-    borderWidth:2,
-    borderColor:'#353A50',
-    marginTop:25,
-    marginLeft:20,
-    marginRight:20,
-  },
-  item: {
-    alignSelf:'center',
-    marginTop:10,
-    marginBottom:10,
-    fontSize: 16,    
-    color:'white'
-  },
-});
