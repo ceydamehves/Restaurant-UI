@@ -24,4 +24,49 @@ export const styles = StyleSheet.create({
         fontSize: 16,    
         color:'white'
       },
+      image:{
+        width:350,
+        height:110,
+        borderTopLeftRadius:10,
+        borderTopRightRadius:10
+      },
+      menuImage:{
+        width:70,
+        height:70,
+        borderTopLeftRadius:10,
+        borderTopRightRadius:10
+      },
+      nextIcon:{
+        alignSelf:'center', 
+        width:30,
+        justifyContent:'flex-end',
+        height:30,
+      },
+      restaurantText:{
+        fontSize:16,
+        color:'white'
+      },
+      restaurantHolder:{
+        backgroundColor:'#2F364E',
+        alignItems:'center',
+        marginTop:20,
+        marginLeft:20,
+        marginRight:20,
+        borderRadius:10,
+        borderWidth:15,
+        borderColor:'#2F364E'
+      },
+      restaurantTouchable:{
+        flexDirection:'row',
+        backgroundColor:'#2F364E',
+        alignItems:'center',
+        justifyContent:'space-between', 
+        marginTop:20,
+        marginLeft:20,
+        marginRight:20,
+        borderRadius:10,
+        borderWidth:15,
+        borderColor:'#2F364E'
+      }
+      
 });

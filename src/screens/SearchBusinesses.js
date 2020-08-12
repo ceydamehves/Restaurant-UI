@@ -30,12 +30,11 @@ class SearchBusinesses extends React.Component{
    
 
   render() {
-    const { search } = this.state;
+    const { search } = this.state;    
     return( 
       
         <View style={{flex:1,backgroundColor:'#23283A'}}>
-            <StatusBar backgroundColor="#2F364E" barStyle="light-content" />
-            
+            <StatusBar backgroundColor="#2F364E" barStyle="light-content" />            
             <SearchBar
               placeholder=" "
               onChangeText={this.updateSearch}
@@ -50,15 +49,20 @@ class SearchBusinesses extends React.Component{
               renderItem={({ item }) => (
                 <View style={styles.flat}>
                 <TouchableOpacity
-                onPress={() => this.props.navigation.navigate('Restaurant')}>
-                  <Image style={{width:350,
-                                 height:110,borderTopLeftRadius:10,borderTopRightRadius:10}}
-                      source={item.src}/>                  
+                  onPress={() => {
+                  this.props.navigation.navigate('Restaurant', {
+                  params:{touch: 'restaurant1'},//use with [props.route.params['touch']] at Restaurant.js
+                  screen:'Restaurant'
+                  });
+                  }}>   
+                  <Image style={styles.image}
+                         source={item.src}/>                  
                   <Text style={styles.flatText}>{item.name}</Text>
                   </TouchableOpacity>
                 </View> 
               )}/>           
-              </View>              
+              </View>  
+
         </View>     
     );
   }

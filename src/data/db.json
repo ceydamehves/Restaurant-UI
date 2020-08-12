@@ -1,0 +1,36 @@
+{    
+      "restaurants":{
+
+        "restaurant1": {
+          "info": 
+          {
+              "name":"RESTAURANT NAME",
+              "adress":"Henry Ford Avenue",
+              "tel":"555 55 55",
+              "rate":"10/10",
+              "menu":
+              {
+                "salad":"SALAD"
+              }
+          }
+        },
+        "restaurant2": {
+            "info": 
+            {
+              "name":"RESTAURANT NAME",
+              "adress":"Henry Ford Avenue",
+              "tel":"555 55 55",
+              "rate":"10/10"
+            }
+          },
+          "restaurant3": {
+            "info": 
+            {
+              "name":"RESTAURANT NAME",
+              "adress":"Henry Ford Avenue",
+              "tel":"555 55 55",
+              "rate":"10/10"
+            }
+          }      
+    }
+}

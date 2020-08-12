@@ -1,12 +1,19 @@
 import React from "react";
-import { View, Text } from "react-native";
+import { View, Text, TouchableOpacity } from "react-native";
 import { styles } from '../styles/styles.js';
 
-const PreviousOrders = () => {
-  return (
-    <View style={styles.center}>
-      <Text>This is the PreviousOrders screen</Text>
+class PreviousOrders extends React.Component{
+  render() {    
+    return( 
+  
+    <View style={{flex:1,backgroundColor:'#23283A'}}>
+      <TouchableOpacity style={styles.restaurantTouchable}
+                  onPress={() => {
+                  this.props.navigation.navigate('PreviousOrdersDetail');}}> 
+        <Text>order</Text>         
+      </TouchableOpacity>
     </View>
-  );
-};
+    );
+  }
+}
 export default PreviousOrders;
