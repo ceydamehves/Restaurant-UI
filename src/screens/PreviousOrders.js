@@ -1,18 +1,23 @@
 import React from "react";
-import { View, Text, TouchableOpacity } from "react-native";
+import {ScrollView, View, Text, TouchableOpacity, Image } from "react-native";
 import { styles } from '../styles/styles.js';
+
 
 class PreviousOrders extends React.Component{
   render() {    
     return( 
   
-    <View style={{flex:1,backgroundColor:'#23283A'}}>
-      <TouchableOpacity style={styles.restaurantTouchable}
+    <ScrollView style={{flex:1,backgroundColor:'#23283A'}}>
+      <TouchableOpacity style={styles.previousOrderTouchable}
                   onPress={() => {
-                  this.props.navigation.navigate('PreviousOrdersDetail');}}> 
-        <Text>order</Text>         
-      </TouchableOpacity>
-    </View>
+                  this.props.navigation.navigate('PreviousOrdersDetail');}}>  
+     <Text style={{color:'white',fontSize:16}}>{"Date : 00/00/00 \nTime : 00.00 "}</Text>                  
+     <Text style={{color:'#FBAE2A',marginLeft:50,fontSize:16}}>Total : $ 00.00 </Text>   
+     <Image style={styles.nextIcon}
+            source={require ('../asset/next.png')}/>         
+     </TouchableOpacity>           
+     
+    </ScrollView>
     );
   }
 }

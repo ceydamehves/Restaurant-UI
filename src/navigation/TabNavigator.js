@@ -12,7 +12,7 @@ const BottomTabNavigator = () => {
     <Tab.Navigator      
       initialRouteName="SearchBusinesses"
       shifting={true}
-      activeColor="yellow"
+      activeColor="#FBAE2A"
       inactiveColor="white"      
       barStyle={{ backgroundColor: "#2F364E" ,  justifyContent:'center', alignItems:'center'}}
       tabBarOptions={{

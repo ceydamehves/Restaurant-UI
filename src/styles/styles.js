@@ -44,7 +44,7 @@ export const styles = StyleSheet.create({
       },
       restaurantText:{
         fontSize:16,
-        color:'white'
+        color:'white',
       },
       restaurantHolder:{
         backgroundColor:'#2F364E',
@@ -67,6 +67,66 @@ export const styles = StyleSheet.create({
         borderRadius:10,
         borderWidth:15,
         borderColor:'#2F364E'
-      }
-      
+      },
+      previousOrderTouchable:{
+        flexDirection:'row',
+        backgroundColor:'#2F364E',
+        alignItems:'center',
+        justifyContent:'space-between', 
+        marginTop:40,
+        marginLeft:20,
+        marginRight:20,
+        borderRadius:10,
+        borderWidth:20,
+        borderColor:'#2F364E'
+      },
+      menuFlat:{
+        flexDirection:'row',
+        backgroundColor:'#2F364E',
+        alignItems:'center',
+        justifyContent:'flex-start', 
+        marginTop:20,
+        marginLeft:20,
+        marginRight:20,
+        borderRadius:10,
+        borderWidth:15,
+        borderColor:'#2F364E'
+      },
+      menuText:{
+          fontSize:16,
+          color:'white',
+          marginLeft:100
+        
+      },
+      detailText:{
+        fontSize:16,
+          color:'white',
+      },
+      count:{
+        backgroundColor:'#FBAE2A',
+        width:20,
+        height:20,
+        justifyContent:'center',
+        alignItems:'center',
+        borderRadius:1
+      },
+      detailHolder:{
+        backgroundColor:'#2F364E',
+        marginTop:20,
+        marginLeft:20,
+        marginRight:20,
+        borderRadius:10,
+        borderWidth:15,
+        borderColor:'#2F364E'
+      },
+      total:{
+        justifyContent:'center',
+        alignItems:'center',
+        backgroundColor:'#FBAE2A',
+        width:120,
+        height:40,        
+        borderRadius:5,
+        marginTop:50,
+        
+      },
 });
